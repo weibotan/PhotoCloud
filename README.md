@@ -5,7 +5,7 @@
 
 ![PhotoCloud on GitHub](images/notify.png)
 
-##Release
+##RELEASE
  [release](https://github.com/liufsd/PhotoCloud/releases)
 
 ## TODO

@@ -1,0 +1,3 @@
+source 'https://github.com/CocoaPods/Specs.git'
+pod "Qiniu", "~> 7.1"
+pod 'ShortcutRecorder/Core', :git => 'https://github.com/larsblumberg/ShortcutRecorder.git', :branch => 'master'

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239m" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="HistoryTableCell" customModule="PhotoCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="3eS-6V-ygd" userLabel="FileNameText">
+                    <rect key="frame" x="79" y="63" width="444" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="440" id="RlM-qX-dUY"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" title="filename" id="q1i-fB-6Au">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="BTY-aE-TZg" userLabel="DownloadUrlText">
+                    <rect key="frame" x="79" y="20" width="444" height="14"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" title="downloadurl" id="DeU-nW-GEj">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-rb-cF8" userLabel="Copy Button">
+                    <rect key="frame" x="484" y="39" width="18" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="nrm-es-wjO"/>
+                    </constraints>
+                    <buttonCell key="cell" type="inline" bezelStyle="inline" image="NSAddTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="9dg-Gm-Ipm">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystemBold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pressCopyAction:" target="c22-O7-iKe" id="1ci-ek-PTz"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qSg-mf-mXt" customClass="SKImageView">
+                    <rect key="frame" x="10" y="17" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="RxY-Lz-95a"/>
+                        <constraint firstAttribute="width" constant="60" id="gpS-mV-Ofd"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PVAsyncImageView" id="nus-eU-lLF"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="BTY-aE-TZg" firstAttribute="top" secondItem="uRM-rb-cF8" secondAttribute="bottom" constant="6" id="1uQ-YW-xCM"/>
+                <constraint firstItem="3eS-6V-ygd" firstAttribute="leading" secondItem="BTY-aE-TZg" secondAttribute="leading" id="MRp-zM-7zz"/>
+                <constraint firstItem="3eS-6V-ygd" firstAttribute="trailing" secondItem="BTY-aE-TZg" secondAttribute="trailing" id="P7b-RO-z6C"/>
+                <constraint firstItem="uRM-rb-cF8" firstAttribute="top" secondItem="3eS-6V-ygd" secondAttribute="bottom" constant="8" symbolic="YES" id="PFV-n1-XGH"/>
+                <constraint firstItem="qSg-mf-mXt" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="10" id="Qw8-Sx-3S8"/>
+                <constraint firstAttribute="trailing" secondItem="uRM-rb-cF8" secondAttribute="trailing" constant="20" symbolic="YES" id="UeA-3W-zJj"/>
+                <constraint firstItem="3eS-6V-ygd" firstAttribute="leading" secondItem="qSg-mf-mXt" secondAttribute="trailing" constant="11" id="eAU-RR-GGD"/>
+                <constraint firstItem="3eS-6V-ygd" firstAttribute="top" secondItem="qSg-mf-mXt" secondAttribute="top" id="m6D-id-3Xx"/>
+                <constraint firstItem="qSg-mf-mXt" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="17" id="t7o-su-FSz"/>
+                <constraint firstAttribute="trailing" secondItem="3eS-6V-ygd" secondAttribute="trailing" constant="1" id="ydi-aX-5dg"/>
+            </constraints>
+            <connections>
+                <outlet property="imageview" destination="qSg-mf-mXt" id="QTd-7N-njK"/>
+                <outlet property="tx_downloadUrl" destination="BTY-aE-TZg" id="soR-sU-F0d"/>
+                <outlet property="tx_fileName" destination="3eS-6V-ygd" id="7AV-QR-DZM"/>
+            </connections>
+            <point key="canvasLocation" x="187.5" y="202"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="PVAsyncImageView" width="128" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239m" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GeneralPreferencesViewController" customModule="PhotoCloud" customModuleProvider="target">
+            <connections>
+                <outlet property="check_atlogin" destination="TG2-m4-78v" id="YGw-F3-7T2"/>
+                <outlet property="check_notify" destination="OfI-di-gnR" id="UIy-LR-MYz"/>
+                <outlet property="tx_prefix" destination="25Q-8U-7Ex" id="Ly7-iK-OF2"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="342"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box title="系统设置" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="lZE-Mx-o6j">
+                    <rect key="frame" x="3" y="180" width="474" height="137"/>
+                    <view key="contentView" id="OT9-m6-Ddx">
+                        <rect key="frame" x="1" y="1" width="472" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="TG2-m4-78v">
+                                <rect key="frame" x="8" y="89" width="113" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Fcf-v1-luA"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="开机启动" bezelStyle="regularSquare" imagePosition="left" inset="2" id="vXf-fW-k06">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkStateAtLogin:" target="-2" id="Ami-vp-pZF"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="OfI-di-gnR">
+                                <rect key="frame" x="8" y="45" width="155" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="moU-yW-SMl"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="通知栏提示" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AvB-bX-R4M">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkStateNotify:" target="-2" id="2q1-Z9-gTZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TG2-m4-78v" firstAttribute="top" secondItem="OT9-m6-Ddx" secondAttribute="top" constant="15" id="P2b-Cm-pxs"/>
+                            <constraint firstItem="OfI-di-gnR" firstAttribute="leading" secondItem="OT9-m6-Ddx" secondAttribute="leading" constant="10" id="VlB-Zj-YBk"/>
+                            <constraint firstItem="OfI-di-gnR" firstAttribute="top" secondItem="TG2-m4-78v" secondAttribute="bottom" constant="30" id="aZu-zv-vlO"/>
+                            <constraint firstItem="TG2-m4-78v" firstAttribute="leading" secondItem="OT9-m6-Ddx" secondAttribute="leading" constant="10" id="nb1-Er-fKf"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" size="12" name=".PingFangSC-Regular"/>
+                </box>
+                <box title="上传设置" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="68a-ao-IlZ">
+                    <rect key="frame" x="3" y="24" width="474" height="153"/>
+                    <view key="contentView" id="Ol6-b3-mTT">
+                        <rect key="frame" x="1" y="1" width="472" height="137"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-ZC-EzK">
+                                <rect key="frame" x="11" y="105" width="125" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="gIM-HM-uhs"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="上传文件统一前缀" id="YNe-eX-Fta">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="25Q-8U-7Ex">
+                                <rect key="frame" x="13" y="58" width="439" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="A2J-pm-GMf"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="uU5-3v-Sge" customClass="RSVerticallyCenteredTextFieldCell">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O3a-Ac-f1b">
+                                <rect key="frame" x="384" y="22" width="67" height="32"/>
+                                <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tZC-xG-TI7">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="save:" target="-2" id="Lmz-Is-jYb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O3a-Ac-f1b" secondAttribute="trailing" constant="27" id="045-yB-cGW"/>
+                            <constraint firstItem="25Q-8U-7Ex" firstAttribute="leading" secondItem="dPf-ZC-EzK" secondAttribute="leading" id="Lc8-I6-WlI"/>
+                            <constraint firstAttribute="bottom" secondItem="O3a-Ac-f1b" secondAttribute="bottom" constant="29" id="TGU-tN-g82"/>
+                            <constraint firstItem="O3a-Ac-f1b" firstAttribute="top" secondItem="25Q-8U-7Ex" secondAttribute="bottom" constant="8" symbolic="YES" id="ZjG-uw-Vpx"/>
+                            <constraint firstItem="dPf-ZC-EzK" firstAttribute="top" secondItem="Ol6-b3-mTT" secondAttribute="top" constant="15" id="hMC-ti-dp0"/>
+                            <constraint firstItem="25Q-8U-7Ex" firstAttribute="top" secondItem="dPf-ZC-EzK" secondAttribute="bottom" constant="16" id="hha-eR-uDh"/>
+                            <constraint firstItem="25Q-8U-7Ex" firstAttribute="leading" secondItem="Ol6-b3-mTT" secondAttribute="leading" constant="13" id="kcm-uc-stw"/>
+                            <constraint firstAttribute="trailing" secondItem="25Q-8U-7Ex" secondAttribute="trailing" constant="20" symbolic="YES" id="xwi-mD-wKB"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="68a-ao-IlZ" firstAttribute="trailing" secondItem="lZE-Mx-o6j" secondAttribute="trailing" id="9CD-im-Wsz"/>
+                <constraint firstAttribute="trailing" secondItem="lZE-Mx-o6j" secondAttribute="trailing" constant="12" id="BXs-QS-rkS"/>
+                <constraint firstItem="68a-ao-IlZ" firstAttribute="top" secondItem="lZE-Mx-o6j" secondAttribute="bottom" constant="7" id="FoY-ic-6M4"/>
+                <constraint firstAttribute="bottom" secondItem="68a-ao-IlZ" secondAttribute="bottom" constant="28" id="RSX-cF-GyO"/>
+                <constraint firstItem="lZE-Mx-o6j" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="25" id="anF-22-cKv"/>
+                <constraint firstItem="68a-ao-IlZ" firstAttribute="leading" secondItem="lZE-Mx-o6j" secondAttribute="leading" id="cMW-OP-yRH"/>
+                <constraint firstItem="lZE-Mx-o6j" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="6" id="n9j-aF-g05"/>
+            </constraints>
+            <point key="canvasLocation" x="142" y="189"/>
+        </customView>
+    </objects>
+</document>

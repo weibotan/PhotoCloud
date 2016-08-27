@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062A2AA41D67778000957D9B /* PTHotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062A2A9E1D6776F500957D9B /* PTHotKey.framework */; };
+		062A2AA51D67778000957D9B /* PTHotKey.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 062A2A9E1D6776F500957D9B /* PTHotKey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		064B4BA31D658806000B5E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B4BA21D658806000B5E7C /* AppDelegate.swift */; };
+		064B4BA71D658806000B5E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064B4BA61D658806000B5E7C /* Assets.xcassets */; };
+		064B4BB31D65885A000B5E7C /* Finder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B4BB21D65885A000B5E7C /* Finder.swift */; };
+		064B4BB61D658902000B5E7C /* FinderSelectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B4BB51D658902000B5E7C /* FinderSelectionProvider.swift */; };
+		064B4BB91D658996000B5E7C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B4BB81D658996000B5E7C /* Extensions.swift */; };
+		064B4BBB1D658B9D000B5E7C /* PhotoCloudStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B4BBA1D658B9D000B5E7C /* PhotoCloudStrings.swift */; };
+		064B4BC11D659334000B5E7C /* HotKeyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 064B4BBE1D659334000B5E7C /* HotKeyMonitor.m */; };
+		064B4BD21D65B0B9000B5E7C /* Qiniu.m in Sources */ = {isa = PBXBuildFile; fileRef = 064B4BD11D65B0B9000B5E7C /* Qiniu.m */; };
+		06667E1A1D67013A00330D7C /* PVAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06667E191D67013A00330D7C /* PVAsyncImageView.m */; };
+		06667E231D67066100330D7C /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 06667E1E1D67066100330D7C /* PINCache.m */; };
+		06667E241D67066100330D7C /* PINDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 06667E201D67066100330D7C /* PINDiskCache.m */; };
+		06667E251D67066100330D7C /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 06667E221D67066100330D7C /* PINMemoryCache.m */; };
+		06667E2C1D67089100330D7C /* SKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06667E2B1D67089100330D7C /* SKImageView.m */; };
+		068320FA1D6A93FB00EF9F57 /* RSVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 068320F91D6A93FB00EF9F57 /* RSVerticallyCenteredTextFieldCell.m */; };
+		068320FD1D6AE9B800EF9F57 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068320FB1D6AE9B800EF9F57 /* GeneralPreferencesViewController.swift */; };
+		068320FE1D6AE9B800EF9F57 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068320FC1D6AE9B800EF9F57 /* GeneralPreferencesViewController.xib */; };
+		068321011D6AF98700EF9F57 /* UITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068321001D6AF98700EF9F57 /* UITools.swift */; };
+		06BFA5F51D65E3D000B40124 /* UserPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA5F31D65E3D000B40124 /* UserPreferencesViewController.swift */; };
+		06BFA5F61D65E3D000B40124 /* UserPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA5F41D65E3D000B40124 /* UserPreferencesViewController.xib */; };
+		06BFA6151D65E90800B40124 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA6121D65E90800B40124 /* MASPreferencesWindow.xib */; };
+		06BFA6161D65E90800B40124 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6141D65E90800B40124 /* MASPreferencesWindowController.m */; };
+		06BFA6181D65F0F700B40124 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6171D65F0F700B40124 /* Preferences.swift */; };
+		06BFA61A1D65F96200B40124 /* QiniuProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6191D65F96200B40124 /* QiniuProvider.swift */; };
+		06BFA6201D66003300B40124 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA61E1D66003300B40124 /* MainMenu.xib */; };
+		06BFA6261D66040900B40124 /* MenuBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6231D66040900B40124 /* MenuBarController.m */; };
+		06BFA6271D66040900B40124 /* StatusItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6251D66040900B40124 /* StatusItemButton.m */; };
+		06BFA62A1D660D5100B40124 /* ShortcutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6281D660D5100B40124 /* ShortcutPreferencesViewController.swift */; };
+		06BFA62B1D660D5100B40124 /* ShortcutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA6291D660D5100B40124 /* ShortcutPreferencesViewController.xib */; };
+		06BFA6301D669B8900B40124 /* SnipManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BFA62F1D669B8900B40124 /* SnipManager.framework */; };
+		06BFA6311D669B8900B40124 /* SnipManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06BFA62F1D669B8900B40124 /* SnipManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06BFA6341D66D58B00B40124 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BFA6321D66D58B00B40124 /* Realm.framework */; };
+		06BFA6351D66D58B00B40124 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06BFA6321D66D58B00B40124 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06BFA6361D66D58B00B40124 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BFA6331D66D58B00B40124 /* RealmSwift.framework */; };
+		06BFA6371D66D58B00B40124 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06BFA6331D66D58B00B40124 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06BFA63A1D66D5FA00B40124 /* PhotoCloudItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6391D66D5FA00B40124 /* PhotoCloudItemModel.swift */; };
+		06BFA63C1D66D9CF00B40124 /* PhotoCloudStoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA63B1D66D9CF00B40124 /* PhotoCloudStoreProvider.swift */; };
+		06BFA6401D66E7A100B40124 /* HistoryWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA63E1D66E7A100B40124 /* HistoryWindowController.swift */; };
+		06BFA6411D66E7A100B40124 /* HistoryWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA63F1D66E7A100B40124 /* HistoryWindowController.xib */; };
+		06BFA6451D66ECC200B40124 /* HistoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFA6441D66ECC200B40124 /* HistoryTableCell.swift */; };
+		06BFA6471D66ECDC00B40124 /* HistoryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BFA6461D66ECDC00B40124 /* HistoryTableCell.xib */; };
+		41901AEA6B961BEEA7CA3F6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4229812EC5344005E862167 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		068320FF1D6AF6B800EF9F57 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BFA60E1D65E83100B40124 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				062A2AA51D67778000957D9B /* PTHotKey.framework in Embed Frameworks */,
+				06BFA6351D66D58B00B40124 /* Realm.framework in Embed Frameworks */,
+				06BFA6311D669B8900B40124 /* SnipManager.framework in Embed Frameworks */,
+				06BFA6371D66D58B00B40124 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		062A2A9E1D6776F500957D9B /* PTHotKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PTHotKey.framework; path = PhotoCloud/Framework/PTHotKey.framework; sourceTree = "<group>"; };
+		064B4B9F1D658806000B5E7C /* PhotoCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		064B4BA21D658806000B5E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		064B4BA61D658806000B5E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		064B4BAB1D658806000B5E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064B4BB21D65885A000B5E7C /* Finder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
+		064B4BB51D658902000B5E7C /* FinderSelectionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderSelectionProvider.swift; sourceTree = "<group>"; };
+		064B4BB81D658996000B5E7C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		064B4BBA1D658B9D000B5E7C /* PhotoCloudStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCloudStrings.swift; sourceTree = "<group>"; };
+		064B4BBD1D659334000B5E7C /* HotKeyMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotKeyMonitor.h; sourceTree = "<group>"; };
+		064B4BBE1D659334000B5E7C /* HotKeyMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotKeyMonitor.m; sourceTree = "<group>"; };
+		064B4BCE1D659404000B5E7C /* PhotoCloud-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoCloud-Bridge-Header.h"; sourceTree = "<group>"; };
+		064B4BD01D65B0B9000B5E7C /* Qiniu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Qiniu.h; sourceTree = "<group>"; };
+		064B4BD11D65B0B9000B5E7C /* Qiniu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Qiniu.m; sourceTree = "<group>"; };
+		06667E181D67013A00330D7C /* PVAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAsyncImageView.h; sourceTree = "<group>"; };
+		06667E191D67013A00330D7C /* PVAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAsyncImageView.m; sourceTree = "<group>"; };
+		06667E1C1D67066100330D7C /* Nullability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nullability.h; sourceTree = "<group>"; };
+		06667E1D1D67066100330D7C /* PINCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCache.h; sourceTree = "<group>"; };
+		06667E1E1D67066100330D7C /* PINCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINCache.m; sourceTree = "<group>"; };
+		06667E1F1D67066100330D7C /* PINDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDiskCache.h; sourceTree = "<group>"; };
+		06667E201D67066100330D7C /* PINDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINDiskCache.m; sourceTree = "<group>"; };
+		06667E211D67066100330D7C /* PINMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINMemoryCache.h; sourceTree = "<group>"; };
+		06667E221D67066100330D7C /* PINMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINMemoryCache.m; sourceTree = "<group>"; };
+		06667E2A1D67089100330D7C /* SKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKImageView.h; sourceTree = "<group>"; };
+		06667E2B1D67089100330D7C /* SKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKImageView.m; sourceTree = "<group>"; };
+		068320F81D6A93FB00EF9F57 /* RSVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		068320F91D6A93FB00EF9F57 /* RSVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
+		068320FB1D6AE9B800EF9F57 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		068320FC1D6AE9B800EF9F57 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		068321001D6AF98700EF9F57 /* UITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITools.swift; sourceTree = "<group>"; };
+		06BFA5F31D65E3D000B40124 /* UserPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewController.swift; sourceTree = "<group>"; };
+		06BFA5F41D65E3D000B40124 /* UserPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPreferencesViewController.xib; sourceTree = "<group>"; };
+		06BFA6101D65E90800B40124 /* MASPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferences.h; sourceTree = "<group>"; };
+		06BFA6111D65E90800B40124 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
+		06BFA6121D65E90800B40124 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		06BFA6131D65E90800B40124 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		06BFA6141D65E90800B40124 /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		06BFA6171D65F0F700B40124 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		06BFA6191D65F96200B40124 /* QiniuProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiniuProvider.swift; sourceTree = "<group>"; };
+		06BFA61F1D66003300B40124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = PhotoCloud/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		06BFA6221D66040900B40124 /* MenuBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBarController.h; sourceTree = "<group>"; };
+		06BFA6231D66040900B40124 /* MenuBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBarController.m; sourceTree = "<group>"; };
+		06BFA6241D66040900B40124 /* StatusItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemButton.h; sourceTree = "<group>"; };
+		06BFA6251D66040900B40124 /* StatusItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemButton.m; sourceTree = "<group>"; };
+		06BFA6281D660D5100B40124 /* ShortcutPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutPreferencesViewController.swift; sourceTree = "<group>"; };
+		06BFA6291D660D5100B40124 /* ShortcutPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutPreferencesViewController.xib; sourceTree = "<group>"; };
+		06BFA62F1D669B8900B40124 /* SnipManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnipManager.framework; path = Carthage/Build/Mac/SnipManager.framework; sourceTree = "<group>"; };
+		06BFA6321D66D58B00B40124 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = PhotoCloud/Framework/Realm.framework; sourceTree = "<group>"; };
+		06BFA6331D66D58B00B40124 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = PhotoCloud/Framework/RealmSwift.framework; sourceTree = "<group>"; };
+		06BFA6391D66D5FA00B40124 /* PhotoCloudItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCloudItemModel.swift; sourceTree = "<group>"; };
+		06BFA63B1D66D9CF00B40124 /* PhotoCloudStoreProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCloudStoreProvider.swift; sourceTree = "<group>"; };
+		06BFA63E1D66E7A100B40124 /* HistoryWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryWindowController.swift; sourceTree = "<group>"; };
+		06BFA63F1D66E7A100B40124 /* HistoryWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryWindowController.xib; sourceTree = "<group>"; };
+		06BFA6441D66ECC200B40124 /* HistoryTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableCell.swift; sourceTree = "<group>"; };
+		06BFA6461D66ECDC00B40124 /* HistoryTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableCell.xib; sourceTree = "<group>"; };
+		C25F457EC504BD50B7BFFC90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D4229812EC5344005E862167 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8193F15BF3D357399DCA8C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		064B4B9C1D658806000B5E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BFA6341D66D58B00B40124 /* Realm.framework in Frameworks */,
+				062A2AA41D67778000957D9B /* PTHotKey.framework in Frameworks */,
+				06BFA6301D669B8900B40124 /* SnipManager.framework in Frameworks */,
+				06BFA6361D66D58B00B40124 /* RealmSwift.framework in Frameworks */,
+				41901AEA6B961BEEA7CA3F6A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		064B4B961D658806000B5E7C = {
+			isa = PBXGroup;
+			children = (
+				064B4BA11D658806000B5E7C /* PhotoCloud */,
+				064B4BA01D658806000B5E7C /* Products */,
+				253B63D85A54F11FD78FD202 /* Pods */,
+				33B477E4E69B07F6B2FE0DFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		064B4BA01D658806000B5E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				064B4B9F1D658806000B5E7C /* PhotoCloud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		064B4BA11D658806000B5E7C /* PhotoCloud */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA63D1D66E76700B40124 /* History */,
+				06BFA6381D66D5D800B40124 /* Model */,
+				064B4BD31D65DCC2000B5E7C /* Preferences */,
+				064B4BB71D658985000B5E7C /* Extensions */,
+				064B4BB41D6588F6000B5E7C /* Services */,
+				064B4BB11D658849000B5E7C /* Vendors */,
+				064B4BA21D658806000B5E7C /* AppDelegate.swift */,
+				06BFA61E1D66003300B40124 /* MainMenu.xib */,
+				064B4BA61D658806000B5E7C /* Assets.xcassets */,
+				064B4BAB1D658806000B5E7C /* Info.plist */,
+				064B4BBA1D658B9D000B5E7C /* PhotoCloudStrings.swift */,
+				064B4BCE1D659404000B5E7C /* PhotoCloud-Bridge-Header.h */,
+			);
+			path = PhotoCloud;
+			sourceTree = "<group>";
+		};
+		064B4BB11D658849000B5E7C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				06667E1B1D67066100330D7C /* PINCache */,
+				06667E171D67013A00330D7C /* PVAsyncImageView */,
+				06BFA6211D66040900B40124 /* MenuBarController */,
+				06BFA60F1D65E90800B40124 /* MASPreferences */,
+				064B4BCF1D65B0B9000B5E7C /* Qiniu */,
+				064B4BBC1D659334000B5E7C /* HotKey */,
+				06667E2A1D67089100330D7C /* SKImageView.h */,
+				06667E2B1D67089100330D7C /* SKImageView.m */,
+				068320F81D6A93FB00EF9F57 /* RSVerticallyCenteredTextFieldCell.h */,
+				068320F91D6A93FB00EF9F57 /* RSVerticallyCenteredTextFieldCell.m */,
+				064B4BB21D65885A000B5E7C /* Finder.swift */,
+				068321001D6AF98700EF9F57 /* UITools.swift */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		064B4BB41D6588F6000B5E7C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				064B4BB51D658902000B5E7C /* FinderSelectionProvider.swift */,
+				06BFA6171D65F0F700B40124 /* Preferences.swift */,
+				06BFA6191D65F96200B40124 /* QiniuProvider.swift */,
+				06BFA63B1D66D9CF00B40124 /* PhotoCloudStoreProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		064B4BB71D658985000B5E7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				064B4BB81D658996000B5E7C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		064B4BBC1D659334000B5E7C /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				064B4BBD1D659334000B5E7C /* HotKeyMonitor.h */,
+				064B4BBE1D659334000B5E7C /* HotKeyMonitor.m */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		064B4BCF1D65B0B9000B5E7C /* Qiniu */ = {
+			isa = PBXGroup;
+			children = (
+				064B4BD01D65B0B9000B5E7C /* Qiniu.h */,
+				064B4BD11D65B0B9000B5E7C /* Qiniu.m */,
+			);
+			path = Qiniu;
+			sourceTree = "<group>";
+		};
+		064B4BD31D65DCC2000B5E7C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA5F31D65E3D000B40124 /* UserPreferencesViewController.swift */,
+				06BFA5F41D65E3D000B40124 /* UserPreferencesViewController.xib */,
+				06BFA6281D660D5100B40124 /* ShortcutPreferencesViewController.swift */,
+				06BFA6291D660D5100B40124 /* ShortcutPreferencesViewController.xib */,
+				068320FB1D6AE9B800EF9F57 /* GeneralPreferencesViewController.swift */,
+				068320FC1D6AE9B800EF9F57 /* GeneralPreferencesViewController.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		06667E171D67013A00330D7C /* PVAsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				06667E181D67013A00330D7C /* PVAsyncImageView.h */,
+				06667E191D67013A00330D7C /* PVAsyncImageView.m */,
+			);
+			path = PVAsyncImageView;
+			sourceTree = "<group>";
+		};
+		06667E1B1D67066100330D7C /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				06667E1C1D67066100330D7C /* Nullability.h */,
+				06667E1D1D67066100330D7C /* PINCache.h */,
+				06667E1E1D67066100330D7C /* PINCache.m */,
+				06667E1F1D67066100330D7C /* PINDiskCache.h */,
+				06667E201D67066100330D7C /* PINDiskCache.m */,
+				06667E211D67066100330D7C /* PINMemoryCache.h */,
+				06667E221D67066100330D7C /* PINMemoryCache.m */,
+			);
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		06BFA60F1D65E90800B40124 /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA6101D65E90800B40124 /* MASPreferences.h */,
+				06BFA6111D65E90800B40124 /* MASPreferencesViewController.h */,
+				06BFA6121D65E90800B40124 /* MASPreferencesWindow.xib */,
+				06BFA6131D65E90800B40124 /* MASPreferencesWindowController.h */,
+				06BFA6141D65E90800B40124 /* MASPreferencesWindowController.m */,
+			);
+			path = MASPreferences;
+			sourceTree = "<group>";
+		};
+		06BFA6211D66040900B40124 /* MenuBarController */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA6221D66040900B40124 /* MenuBarController.h */,
+				06BFA6231D66040900B40124 /* MenuBarController.m */,
+				06BFA6241D66040900B40124 /* StatusItemButton.h */,
+				06BFA6251D66040900B40124 /* StatusItemButton.m */,
+			);
+			path = MenuBarController;
+			sourceTree = "<group>";
+		};
+		06BFA6381D66D5D800B40124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA6391D66D5FA00B40124 /* PhotoCloudItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06BFA63D1D66E76700B40124 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				06BFA63E1D66E7A100B40124 /* HistoryWindowController.swift */,
+				06BFA63F1D66E7A100B40124 /* HistoryWindowController.xib */,
+				06BFA6441D66ECC200B40124 /* HistoryTableCell.swift */,
+				06BFA6461D66ECDC00B40124 /* HistoryTableCell.xib */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		253B63D85A54F11FD78FD202 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB8193F15BF3D357399DCA8C /* Pods.debug.xcconfig */,
+				C25F457EC504BD50B7BFFC90 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		33B477E4E69B07F6B2FE0DFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				062A2A9E1D6776F500957D9B /* PTHotKey.framework */,
+				06BFA6321D66D58B00B40124 /* Realm.framework */,
+				06BFA6331D66D58B00B40124 /* RealmSwift.framework */,
+				06BFA62F1D669B8900B40124 /* SnipManager.framework */,
+				D4229812EC5344005E862167 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		064B4B9E1D658806000B5E7C /* PhotoCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064B4BAE1D658806000B5E7C /* Build configuration list for PBXNativeTarget "PhotoCloud" */;
+			buildPhases = (
+				F05C7E2086932ED7F29D5D76 /* Check Pods Manifest.lock */,
+				064B4B9B1D658806000B5E7C /* Sources */,
+				064B4B9C1D658806000B5E7C /* Frameworks */,
+				064B4B9D1D658806000B5E7C /* Resources */,
+				B42FA92E6D01A14130030AB6 /* Copy Pods Resources */,
+				06BFA60E1D65E83100B40124 /* Embed Frameworks */,
+				068320FF1D6AF6B800EF9F57 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoCloud;
+			productName = PhotoCloud;
+			productReference = 064B4B9F1D658806000B5E7C /* PhotoCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		064B4B971D658806000B5E7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = liupeng;
+				TargetAttributes = {
+					064B4B9E1D658806000B5E7C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 064B4B9A1D658806000B5E7C /* Build configuration list for PBXProject "PhotoCloud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 064B4B961D658806000B5E7C;
+			productRefGroup = 064B4BA01D658806000B5E7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				064B4B9E1D658806000B5E7C /* PhotoCloud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		064B4B9D1D658806000B5E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BFA6151D65E90800B40124 /* MASPreferencesWindow.xib in Resources */,
+				06BFA6471D66ECDC00B40124 /* HistoryTableCell.xib in Resources */,
+				06BFA62B1D660D5100B40124 /* ShortcutPreferencesViewController.xib in Resources */,
+				06BFA6411D66E7A100B40124 /* HistoryWindowController.xib in Resources */,
+				068320FE1D6AE9B800EF9F57 /* GeneralPreferencesViewController.xib in Resources */,
+				06BFA6201D66003300B40124 /* MainMenu.xib in Resources */,
+				06BFA5F61D65E3D000B40124 /* UserPreferencesViewController.xib in Resources */,
+				064B4BA71D658806000B5E7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B42FA92E6D01A14130030AB6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05C7E2086932ED7F29D5D76 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		064B4B9B1D658806000B5E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BFA6161D65E90800B40124 /* MASPreferencesWindowController.m in Sources */,
+				068321011D6AF98700EF9F57 /* UITools.swift in Sources */,
+				06BFA63C1D66D9CF00B40124 /* PhotoCloudStoreProvider.swift in Sources */,
+				06BFA6181D65F0F700B40124 /* Preferences.swift in Sources */,
+				06667E1A1D67013A00330D7C /* PVAsyncImageView.m in Sources */,
+				06BFA6451D66ECC200B40124 /* HistoryTableCell.swift in Sources */,
+				064B4BB61D658902000B5E7C /* FinderSelectionProvider.swift in Sources */,
+				06BFA62A1D660D5100B40124 /* ShortcutPreferencesViewController.swift in Sources */,
+				06BFA63A1D66D5FA00B40124 /* PhotoCloudItemModel.swift in Sources */,
+				06BFA6271D66040900B40124 /* StatusItemButton.m in Sources */,
+				06BFA61A1D65F96200B40124 /* QiniuProvider.swift in Sources */,
+				064B4BB31D65885A000B5E7C /* Finder.swift in Sources */,
+				06BFA6401D66E7A100B40124 /* HistoryWindowController.swift in Sources */,
+				06667E231D67066100330D7C /* PINCache.m in Sources */,
+				068320FD1D6AE9B800EF9F57 /* GeneralPreferencesViewController.swift in Sources */,
+				064B4BB91D658996000B5E7C /* Extensions.swift in Sources */,
+				064B4BA31D658806000B5E7C /* AppDelegate.swift in Sources */,
+				064B4BD21D65B0B9000B5E7C /* Qiniu.m in Sources */,
+				06667E241D67066100330D7C /* PINDiskCache.m in Sources */,
+				064B4BBB1D658B9D000B5E7C /* PhotoCloudStrings.swift in Sources */,
+				06BFA5F51D65E3D000B40124 /* UserPreferencesViewController.swift in Sources */,
+				06667E251D67066100330D7C /* PINMemoryCache.m in Sources */,
+				06667E2C1D67089100330D7C /* SKImageView.m in Sources */,
+				068320FA1D6A93FB00EF9F57 /* RSVerticallyCenteredTextFieldCell.m in Sources */,
+				064B4BC11D659334000B5E7C /* HotKeyMonitor.m in Sources */,
+				06BFA6261D66040900B40124 /* MenuBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06BFA61E1D66003300B40124 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BFA61F1D66003300B40124 /* Base */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		064B4BAC1D658806000B5E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Carthage/Build/Mac\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		064B4BAD1D658806000B5E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Carthage/Build/Mac\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		064B4BAF1D658806000B5E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8193F15BF3D357399DCA8C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Carthage/Build/Mac\"",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"$(SRCROOT)/PhotoCloud/Framework\"",
+					"$(PROJECT_DIR)/PhotoCloud/Framework",
+				);
+				INFOPLIST_FILE = PhotoCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.sk.PhotoCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoCloud/PhotoCloud-Bridge-Header.h";
+			};
+			name = Debug;
+		};
+		064B4BB01D658806000B5E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C25F457EC504BD50B7BFFC90 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Carthage/Build/Mac\"",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"$(SRCROOT)/PhotoCloud/Framework\"",
+					"$(PROJECT_DIR)/PhotoCloud/Framework",
+				);
+				INFOPLIST_FILE = PhotoCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hj.sk.PhotoCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoCloud/PhotoCloud-Bridge-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		064B4B9A1D658806000B5E7C /* Build configuration list for PBXProject "PhotoCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064B4BAC1D658806000B5E7C /* Debug */,
+				064B4BAD1D658806000B5E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		064B4BAE1D658806000B5E7C /* Build configuration list for PBXNativeTarget "PhotoCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064B4BAF1D658806000B5E7C /* Debug */,
+				064B4BB01D658806000B5E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 064B4B971D658806000B5E7C /* Project object */;
+}

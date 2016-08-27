@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239m" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ShortcutPreferencesViewController" customModule="PhotoCloud" customModuleProvider="target">
+            <connections>
+                <outlet property="shortcutview_snip" destination="XKM-5T-gDl" id="Ylg-2m-nNn"/>
+                <outlet property="shortcutview_upload" destination="AMA-Ce-Kk4" id="oJj-Hb-XEv"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W9H-TT-vav">
+                    <rect key="frame" x="18" y="207" width="88" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fqe-yc-VP5"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="选中文件上传:" id="Cw5-9D-9Vu">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lw6-qs-4sc">
+                    <rect key="frame" x="18" y="161" width="88" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="E6n-yb-Xnj"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="截图文件上传:" id="paj-OF-kUF">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="AMA-Ce-Kk4" customClass="SRRecorderControl">
+                    <rect key="frame" x="140" y="200" width="213" height="44"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="XKM-5T-gDl" customClass="SRRecorderControl">
+                    <rect key="frame" x="140" y="147" width="213" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Ca8-lY-1d1"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="W9H-TT-vav" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="1mO-8e-0PX"/>
+                <constraint firstItem="lw6-qs-4sc" firstAttribute="top" secondItem="W9H-TT-vav" secondAttribute="bottom" constant="29" id="2on-fW-3VO"/>
+                <constraint firstAttribute="trailing" secondItem="XKM-5T-gDl" secondAttribute="trailing" constant="127" id="7M3-m9-eB0"/>
+                <constraint firstItem="AMA-Ce-Kk4" firstAttribute="trailing" secondItem="XKM-5T-gDl" secondAttribute="trailing" id="G1r-wC-BIF"/>
+                <constraint firstItem="AMA-Ce-Kk4" firstAttribute="centerY" secondItem="W9H-TT-vav" secondAttribute="centerY" id="GXu-bL-9Tb"/>
+                <constraint firstItem="W9H-TT-vav" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="35" id="Jp2-VM-BGP"/>
+                <constraint firstItem="XKM-5T-gDl" firstAttribute="top" secondItem="AMA-Ce-Kk4" secondAttribute="bottom" constant="17" id="NaI-mk-KYy"/>
+                <constraint firstItem="lw6-qs-4sc" firstAttribute="leading" secondItem="W9H-TT-vav" secondAttribute="leading" id="OKv-tA-2Ln"/>
+                <constraint firstItem="AMA-Ce-Kk4" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="140" id="P0n-RR-Kxo"/>
+                <constraint firstItem="XKM-5T-gDl" firstAttribute="leading" secondItem="lw6-qs-4sc" secondAttribute="trailing" constant="36" id="QxF-oZ-xJ9"/>
+                <constraint firstItem="AMA-Ce-Kk4" firstAttribute="leading" secondItem="XKM-5T-gDl" secondAttribute="leading" id="bcs-hC-DJR"/>
+                <constraint firstItem="AMA-Ce-Kk4" firstAttribute="leading" secondItem="W9H-TT-vav" secondAttribute="trailing" constant="36" id="jjx-QR-l4B"/>
+                <constraint firstItem="AMA-Ce-Kk4" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="28" id="qA7-mM-shr"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

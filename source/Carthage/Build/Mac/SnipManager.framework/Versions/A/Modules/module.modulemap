@@ -1,0 +1,6 @@
+framework module SnipManager {
+  umbrella header "SnipManager.h"
+
+  export *
+  module * { export * }
+}
